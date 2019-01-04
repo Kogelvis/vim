@@ -39,8 +39,7 @@ nnoremap <F5> :set paste!<CR>
 inoremap <F5> <ESC>:set paste!<CR>a
 inoremap jj <ESC>
 
-" Toggle folding
-" nnoremap <F9> zA
+" run the python code in this buffer
 nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
 
 " Show leader
@@ -74,10 +73,10 @@ let g:flake8_show_in_gutter=1  " show
 nnoremap <F8> :call flake8#Flake8UnplaceMarkers()<CR>
 
 " Easily switch between splits
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-h> <C-W>h
-map <C-l> <C-W>l
+"map <C-j> <C-W>j
+"map <C-k> <C-W>k
+"map <C-h> <C-W>h
+"map <C-l> <C-W>l
 
 " YouCompleteMe settings
 "let g:ycm_global_ycm_extra_conf = '/usr/share/vim/vimfiles/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
@@ -118,8 +117,3 @@ let g:airline#extensions#tabline#show_tab_type = 0
 let g:airline#extensions#tabline#close_symbol = '×'
 let g:airline#extensions#tabline#show_close_button = 0
 let g:airline_theme = 'powerlineish'
-
-"if !exists('g:airline_symbols')
-"  let g:airline_symbols = {}
-"endif
-"let g:airline_symbols.space = "\ua0"
