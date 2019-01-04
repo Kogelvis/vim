@@ -1,0 +1,30 @@
+[submodule "pack/my-plugins/start/YouCompleteMe"]
+	path = pack/my-plugins/start/YouCompleteMe
+	url = git@github.com:Valloric/YouCompleteMe.git
+[submodule "pack/my-plugins/start/vim-arduino-syntax"]
+	path = pack/my-plugins/start/vim-arduino-syntax
+	url = git@github.com:sudar/vim-arduino-syntax.git
+[submodule "pack/my-plugins/start/ctrlp.vim"]
+	path = pack/my-plugins/start/ctrlp.vim
+	url = git@github.com:ctrlpvim/ctrlp.vim.git
+[submodule "pack/my-plugins/start/syntastic"]
+	path = pack/my-plugins/start/syntastic
+	url = git@github.com:vim-syntastic/syntastic.git
+[submodule "pack/my-plugins/start/vim-flake8"]
+	path = pack/my-plugins/start/vim-flake8
+	url = git@github.com:nvie/vim-flake8.git
+[submodule "pack/my-plugins/start/salt-vim"]
+	path = pack/my-plugins/start/salt-vim
+	url = git@github.com:saltstack/salt-vim.git
+[submodule "pack/my-plugins/start/vim-monokai-phoenix"]
+	path = pack/my-plugins/start/vim-monokai-phoenix
+	url = git@github.com:Reewr/vim-monokai-phoenix.git
+[submodule "pack/my-plugins/opt/httplog"]
+	path = pack/my-plugins/opt/httplog
+	url = git@github.com:vim-scripts/httplog.git
+[submodule "pack/my-plugins/start/vim-airline"]
+	path = pack/my-plugins/start/vim-airline
+	url = git@github.com:vim-airline/vim-airline.git
+[submodule "pack/my-plugins/start/vim-airline-themes"]
+	path = pack/my-plugins/start/vim-airline-themes
+	url = git@github.com:vim-airline/vim-airline-themes.git
