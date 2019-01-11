@@ -81,6 +81,44 @@ nnoremap <F8> :call flake8#Flake8UnplaceMarkers()<CR>
 " YouCompleteMe settings
 "let g:ycm_global_ycm_extra_conf = '/usr/share/vim/vimfiles/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 let g:ycm_autoclose_preview_window_after_completion=1
+let g:ycm_min_num_of_chars_for_completion = 2
+let g:ycm_max_diagnostics_to_display = 30
+let g:ycm_auto_trigger = 1
+let g:ycm_semantic_triggers =  {
+  \   'c': ['->', '.'],
+  \   'objc': ['->', '.', 're!\[[_a-zA-Z]+\w*\s', 're!^\s*[^\W\d]\w*\s',
+  \            're!\[.*\]\s'],
+  \   'ocaml': ['.', '#'],
+  \   'cpp,cuda,objcpp': ['->', '.', '::'],
+  \   'perl': ['->'],
+  \   'php': ['->', '::'],
+  \   'cs,d,elixir,go,groovy,java,javascript,julia,perl6,python,scala,typescript,vb': ['.'],
+  \   'ruby,rust': ['.', '::'],
+  \   'lua': ['.', ':'],
+  \   'erlang': [':'],
+  \ }
+let g:ycm_max_num_candidates = 50
+let g:ycm_filetype_whitelist = {'*': 1}
+let g:ycm_filetype_blacklist = {
+      \ 'tagbar': 1,
+      \ 'qf': 1,
+      \ 'notes': 1,
+      \ 'markdown': 1,
+      \ 'unite': 1,
+      \ 'text': 1,
+      \ 'vimwiki': 1,
+      \ 'pandoc': 1,
+      \ 'infolog': 1,
+      \ 'mail': 1
+      \}
+let g:ycm_filter_diagnostics = {}
+let g:ycm_collect_identifiers_from_tags_files = 0
+let g:ycm_seed_identifiers_with_syntax = 0
+let g:ycm_filetype_specific_completion_to_disable = {
+      \ 'gitcommit': 1
+      \}
+let g:ycm_complete_in_comments = 0
+let g:ycm_complete_in_strings = 1
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 " Add pylint3 as syntastic checker
